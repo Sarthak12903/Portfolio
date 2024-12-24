@@ -13,7 +13,12 @@ export default function Sidebar() {
   return (
     <div className="bg-[#040b14] fixed z-50 select-none w-72 h-[100vh] text-white flex flex-col justify-start p-16 items-center space-y-8 ">
       <div className="flex flex-col justify-center items-center space-y-4">
-        <CgProfile className="w-24 h-24" />
+        {(
+          <img
+            src="/Sarthak.jpeg"
+            className="w-26 h-26 rounded-full border-8 border-slate-700 cursor-pointer"
+          />
+        ) || <CgProfile className="w-24 h-24" />}
         <h1 className="text-2xl">Sarthak Bhalerao</h1>
         <div className="flex space-x-4">
           <div
@@ -53,7 +58,7 @@ export default function Sidebar() {
           </div>
         </div>
       </div>
-      <div className=" space-y-6 text-xl w-64 p-2 flex flex-col justify-start items-start  ">
+      <div className=" space-y-6 text-xl w-64  flex flex-col justify-start items-start  ">
         <NavLink
           to={"/"}
           className="flex justify-start items-center space-x-4 hover:bg-white/[0.2] w-full p-4 rounded-xl active:scale-95"
