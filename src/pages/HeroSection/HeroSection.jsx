@@ -1,21 +1,31 @@
-import About from "../About/About";
+import { Link } from "react-scroll";
 
 export default function HeroSection() {
   return (
-    <div>
-      <div className="relative h-screen w-[100vw]  bg-blue-950 bg-cover bg-left ">
-        <div className="absolute inset-0 bg-[url('/ME.HEIC')]   bg-no-repeat bg-right" />
-        <div className="absolute inset-0 bg-black/60" />
-        <div className="relative z-10 h-full ml-72 flex flex-col justify-center items-start px-20">
-          <h1 className="text-6xl font-bold text-white mb-4">
-            Sarthak Bhalerao
-          </h1>
-          <p className="text-3xl text-white">
-            I'm <span className="text-blue-400 ">Developer</span>
+    <div
+      id="home"
+      className="bg-[url('/background.avif')] bg-no-repeat bg-cover  text-white h-screen flex items-center justify-center"
+    >
+      <div className="flex justify-end gap-56 mr-56 items-center w-full">
+        <div className="flex flex-col space-y-3">
+          <h1 className="text-6xl">Sarthak Bhalerao</h1>
+          <p className="text-2xl">
+            I'm <span className="text-blue-400">Full stack developer</span>
           </p>
+          <Link
+            to="about"
+            smooth={true}
+            duration={500}
+            className="w-32 p-2 text-center cursor-pointer rounded-lg hover:bg-white/[0.2] active:scale-95 bg-blue-950 "
+          >
+            Know More
+          </Link>
+        </div>
+        <div className="relative ">
+          <img src="/ME.jpeg" className="w-[30rem] h-[38rem] rounded-3xl" />
+          <div className="absolute inset-0 bg-black/[0.4] rounded-3xl"></div>
         </div>
       </div>
-      <About />
     </div>
   );
 }
