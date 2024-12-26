@@ -5,7 +5,7 @@ export default function About() {
       className="ml-72 p-9 w-[80%] h-screen space-y-12 flex flex-col flex-wrap"
     >
       <div className="space-y-4">
-        <h1 className="text-3xl font-bold pb-3 broder border-b-2 border-yellow-300 inline-block">
+        <h1 className="text-4xl font-bold pb-3 broder border-b-2 border-yellow-300 inline-block">
           About
         </h1>
         <p>
@@ -17,9 +17,11 @@ export default function About() {
           and contribute my skills to your team.
         </p>
       </div>
-      <div>
+      <div className="flex space-x-14">
         <img src="/Sarthak.jpeg" className="rounded-xl" />
-        <div></div>
+        <div className="flex flex-col">
+          <h1 className="font-semibold text-3xl">Full Stack Developer</h1>
+        </div>
       </div>
       <div></div>
     </div>
