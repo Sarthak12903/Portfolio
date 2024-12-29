@@ -1,4 +1,5 @@
 import { IoIosArrowForward } from "react-icons/io";
+import SkillsSection from "../../components/SkillsSection/SkillsSection";
 const about = [
   {
     id: 1,
@@ -47,7 +48,7 @@ export default function About() {
   return (
     <div
       id="about"
-      className="ml-72 p-9 w-[84%] h-screen space-y-12 flex flex-col flex-wrap"
+      className="ml-72 p-9 w-[84%] h-screen space-y-12 flex flex-col"
     >
       <div className="space-y-4">
         <h1 className="text-4xl font-bold pb-3 broder border-b-2 border-yellow-300 inline-block">
@@ -99,9 +100,16 @@ export default function About() {
               </ul>
             </div>
           </div>
+          <p>
+            Dedicated to achieving excellence in every project, I focus on
+            creating innovative and efficient solutions tailored to clients'
+            needs. Let's collaborate to build something amazing!
+          </p>
         </div>
       </div>
-      <div></div>
+      <div>
+        <SkillsSection />
+      </div>
     </div>
   );
 }
