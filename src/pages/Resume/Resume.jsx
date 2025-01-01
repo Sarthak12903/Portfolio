@@ -16,7 +16,7 @@ export default function Resume() {
     <>
       {" "}
       <div id="resume" className="ml-72 mt-36 p-10 w-[70vw] h-screen">
-        <h1 className="text-4xl font-bold pb-3 broder border-b-2 border-yellow-300 inline-block">
+        <h1 className="text-4xl font-bold pb-3 broder border-b-2 w-20 border-blue-300 inline-block">
           Resume
         </h1>
         <div className="grid md:grid-cols-2 mt-10 gap-8">
@@ -92,7 +92,7 @@ export default function Resume() {
             </section>
           </div>
         </div>
-        <div className="mt-12 flex justify-center gap-4">
+        <div className="mt-8 bg-blue-100 flex py-24 rounded-2xl border-dotted border-2 border-slate-500 justify-center gap-4">
           <button
             onClick={() => setShowPreview(true)}
             className="flex items-center gap-2 px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors"

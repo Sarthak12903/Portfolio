@@ -51,7 +51,7 @@ export default function About() {
       className="ml-72 p-9 w-[84%] h-screen space-y-12 flex flex-col "
     >
       <div className="space-y-4">
-        <h1 className="text-4xl font-bold pb-3 broder border-b-2 border-yellow-300 inline-block">
+        <h1 className="text-4xl font-bold pb-3 broder border-b-2 w-20 border-blue-300 inline-block">
           About
         </h1>
         <p>
