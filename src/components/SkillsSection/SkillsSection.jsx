@@ -6,13 +6,14 @@ const SkillsSection = () => {
   const skills = [
     { name: "HTML", percentage: 100 },
     { name: "CSS", percentage: 90 },
-    { name: "JAVASCRIPT", percentage: 75 },
-    { name: "Reactjs", percentage: 80 },
+    { name: "JAVASCRIPT", percentage: 85 },
+    { name: "Reactjs", percentage: 90 },
     { name: "Nodejs", percentage: 70 },
-    { name: "Expressjs", percentage: 75 },
-    { name: "MongoDB", percentage: 60 },
+    { name: "Expressjs", percentage: 80 },
+    { name: "MongoDB", percentage: 75 },
     { name: "PostgreSQL", percentage: 100 },
     { name: "Typescript", percentage: 70 },
+    { name: "C++", percentage: 50 },
   ];
 
   useEffect(() => {
